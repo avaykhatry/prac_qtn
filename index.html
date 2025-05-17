@@ -8,12 +8,14 @@
 <body>
     <p id="demo"></p>
     <script>
-        let a = 2;
-        let b = 3;
-        if (a > b){
-            document.getElementById("demo").innerHTML = a;
+        const a = 3;
+        const b = -7;
+        const c = 2;
+        let myProduct = a * b * c;
+        if (myProduct < 0){
+            document.getElementById("demo").innerHTML = "The sign is '-'.";
         } else {
-            document.getElementById("demo").innerHTML = b;
+            document.getElementById("demo").innerHTML = "The sign is '+'.";
         }
     </script>
 </body>
